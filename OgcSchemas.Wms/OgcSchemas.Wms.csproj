@@ -40,23 +40,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="wms\1302\capabilities_1_3_0.cs" />
-    <Compile Include="wms\1302\exceptions_1_3_0.cs" />
+    <Compile Include="1302\Capabilities_1_3_0_2.cs" />
+    <Compile Include="1302\Exceptions_1_3_0_2.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="wms\1302\schemas\capabilities_1_3_0.xml" />
-    <Content Include="wms\1302\schemas\exceptions_1_3_0.xml" />
+    <Content Include="1302\schemas\capabilities_1_3_0.xml" />
+    <Content Include="1302\schemas\exceptions_1_3_0.xml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="wms\specs\1.1.1_01-068r3_Web_Map_Service_Implementation_Specification.pdf" />
-    <None Include="wms\specs\1.3.0_06-042_OpenGIS_Web_Map_Service_WMS_Implementation_Specification.pdf" />
-    <None Include="wms\1302\schemas\capabilities_1_3_0.xsd">
+    <None Include="specs\1.1.1_01-068r3_Web_Map_Service_Implementation_Specification.pdf" />
+    <None Include="specs\1.3.0_06-042_OpenGIS_Web_Map_Service_WMS_Implementation_Specification.pdf" />
+    <None Include="1302\schemas\capabilities_1_3_0.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="wms\1302\schemas\exceptions_1_3_0.xsd">
+    <None Include="1302\schemas\exceptions_1_3_0.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="wms\1302\schemas\xlink.xsd">
+    <None Include="1302\schemas\xlink.xsd">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
