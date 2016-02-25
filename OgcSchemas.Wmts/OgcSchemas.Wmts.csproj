@@ -40,8 +40,108 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="101\xlink_owscommon_wmtsgetcapabilities_response.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="101\schemas\examples\wmtsConcrete.wsdl" />
+    <None Include="101\schemas\examples\wmtsGetFeatureInfo_response_GML.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="101\schemas\ows19115subset.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="101\schemas\owsAll.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="101\schemas\owsCommon.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="101\schemas\owsContents.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="101\schemas\owsDataIdentification.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="101\schemas\owsDomainType.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="101\schemas\owsExceptionReport.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="101\schemas\owsGetCapabilities.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="101\schemas\owsGetResourceByID.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="101\schemas\owsInputOutputData.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="101\schemas\owsManifest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="101\schemas\owsOperationsMetadata.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="101\schemas\owsServiceIdentification.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="101\schemas\owsServiceProvider.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="101\schemas\profiles\wmts-simple\wmtsSimpleGetCapabilities.sch" />
+    <None Include="101\schemas\profiles\wmts-simple\wmtsTileMatrixSet.json" />
+    <None Include="101\schemas\wmts.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="101\schemas\wmtsAbstract.wsdl" />
+    <None Include="101\schemas\wmtsGetCapabilities_request.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="101\schemas\wmtsGetCapabilities_response.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="101\schemas\wmtsGetFeatureInfo_request.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="101\schemas\wmtsGetFeatureInfo_response.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="101\schemas\wmtsGetTile_request.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="101\schemas\wmtsKVP.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="101\schemas\wmtsPayload_response.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="101\schemas\xlink.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="specs\07-057r7_Web_Map_Tile_Service_Standard.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="101\schemas\examples\wmtsExceptionReport.xml" />
+    <Content Include="101\schemas\examples\wmtsExceptionReport_SOAP.xml" />
+    <Content Include="101\schemas\examples\wmtsGetCapabilities_request_SOAP.xml" />
+    <Content Include="101\schemas\examples\wmtsGetCapabilities_response.xml" />
+    <Content Include="101\schemas\examples\wmtsGetCapabilities_response_RESTful.xml" />
+    <Content Include="101\schemas\examples\wmtsGetCapabilities_response_SOAP.xml" />
+    <Content Include="101\schemas\examples\wmtsGetFeatureInfo_request_SOAP.xml" />
+    <Content Include="101\schemas\examples\wmtsGetFeatureInfo_response_GML.xml" />
+    <Content Include="101\schemas\examples\wmtsGetFeatureInfo_response_SOAP.xml" />
+    <Content Include="101\schemas\examples\wmtsGetFeatureInfo_response_SOAP2.xml" />
+    <Content Include="101\schemas\examples\wmtsGetFeatureInfo_response_SOAP3.xml" />
+    <Content Include="101\schemas\examples\wmtsGetTile_request_SOAP.xml" />
+    <Content Include="101\schemas\examples\wmtsGetTile_response_SOAP.xml" />
+    <Content Include="101\schemas\profiles\wmts-simple\examples\wmtsGetCapabilities_response_both.xml" />
+    <Content Include="101\schemas\profiles\wmts-simple\examples\wmtsGetCapabilities_response_CRS84.xml" />
+    <Content Include="101\schemas\profiles\wmts-simple\examples\wmtsGetCapabilities_response_OSM.xml" />
+    <Content Include="101\schemas\ReadMe-wmts-1_0_1.txt" />
+    <Content Include="101\schemas\xsd commands.txt" />
+    <Content Include="101\schemas\xsd.exe" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
