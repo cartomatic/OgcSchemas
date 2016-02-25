@@ -1,0 +1,19 @@
+xtra files
+xlink.xsd
+ows all files
+
+
+
+
+owsGetResourceByID.xsd
+owsExceptionReport.xsd
+owsDomainType.xsd
+owsContents.xsd
+owsInputOutputData.xsd
+owsall.xsd
+
+
+xsd xlink.xsd owscommon.xsd owsall.xsd wmtsgetcapabilities_response.xsd /c
+
+
+pause
