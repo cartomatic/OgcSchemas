@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>c57cb13e-c60b-4b26-a2f7-c09673580ff5</ProjectGuid>
+    <ProjectGuid>{C57CB13E-C60B-4B26-A2F7-C09673580FF5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>OgcSchemas.Ows</RootNamespace>
@@ -30,24 +30,244 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System"/>
-    
-    <Reference Include="System.Core"/>
-    <Reference Include="System.Xml.Linq"/>
-    <Reference Include="System.Data.DataSetExtensions"/>
-    
-    
-    <Reference Include="Microsoft.CSharp"/>
-    
-    <Reference Include="System.Data"/>
-    
-    <Reference Include="System.Net.Http"/>
-    
-    <Reference Include="System.Xml"/>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="1103\xlink_owscommon_owsall.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="1100\schemas\Examples\exampleCapabilities.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1100\schemas\ows19115subset.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1100\schemas\owsAll.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1100\schemas\owsCommon.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1100\schemas\owsContents.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1100\schemas\owsDataIdentification.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1100\schemas\owsDomainType.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1100\schemas\owsExceptionReport.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1100\schemas\owsGetCapabilities.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1100\schemas\owsGetResourceByID.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1100\schemas\owsInputOutputData.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1100\schemas\owsManifest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1100\schemas\owsOperationsMetadata.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1100\schemas\owsServiceIdentification.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1100\schemas\owsServiceProvider.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1101\schemas\Examples\exampleCapabilities.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1101\schemas\ows19115subset.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1101\schemas\owsAll.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1101\schemas\owsCommon.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1101\schemas\owsContents.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1101\schemas\owsDataIdentification.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1101\schemas\owsDomainType.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1101\schemas\owsExceptionReport.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1101\schemas\owsGetCapabilities.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1101\schemas\owsGetResourceByID.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1101\schemas\owsInputOutputData.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1101\schemas\owsManifest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1101\schemas\owsOperationsMetadata.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1101\schemas\owsServiceIdentification.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1101\schemas\owsServiceProvider.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1102\schemas\Examples\exampleCapabilities.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1102\schemas\ows19115subset.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1102\schemas\owsAll.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1102\schemas\owsCommon.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1102\schemas\owsContents.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1102\schemas\owsDataIdentification.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1102\schemas\owsDomainType.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1102\schemas\owsExceptionReport.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1102\schemas\owsGetCapabilities.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1102\schemas\owsGetResourceByID.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1102\schemas\owsInputOutputData.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1102\schemas\owsManifest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1102\schemas\owsOperationsMetadata.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1102\schemas\owsServiceIdentification.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1102\schemas\owsServiceProvider.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1103\schemas\Examples\exampleCapabilities.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1103\schemas\ows19115subset.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1103\schemas\owsAll.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1103\schemas\owsCommon.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1103\schemas\owsContents.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1103\schemas\owsDataIdentification.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1103\schemas\owsDomainType.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1103\schemas\owsExceptionReport.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1103\schemas\owsGetCapabilities.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1103\schemas\owsGetResourceByID.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1103\schemas\owsInputOutputData.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1103\schemas\owsManifest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1103\schemas\owsOperationsMetadata.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1103\schemas\owsServiceIdentification.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1103\schemas\owsServiceProvider.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="1103\schemas\xlink.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1100\schemas\Examples\exampleCapabilities1.xml" />
+    <Content Include="1100\schemas\Examples\exampleConstraint1.xml" />
+    <Content Include="1100\schemas\Examples\exampleExceptionReport1.xml" />
+    <Content Include="1100\schemas\Examples\exampleExceptionReport2.xml" />
+    <Content Include="1100\schemas\Examples\exampleGeneralBox2.xml" />
+    <Content Include="1100\schemas\Examples\exampleGetCapabilities2.xml" />
+    <Content Include="1100\schemas\Examples\exampleOperationsMetadata.xml" />
+    <Content Include="1100\schemas\Examples\exampleWGS84Box2.xml" />
+    <Content Include="1101\schemas\Examples\exampleCapabilities1.xml" />
+    <Content Include="1101\schemas\Examples\exampleConstraint1.xml" />
+    <Content Include="1101\schemas\Examples\exampleExceptionReport1.xml" />
+    <Content Include="1101\schemas\Examples\exampleExceptionReport2.xml" />
+    <Content Include="1101\schemas\Examples\exampleGeneralBox2.xml" />
+    <Content Include="1101\schemas\Examples\exampleGetCapabilities2.xml" />
+    <Content Include="1101\schemas\Examples\exampleOperationsMetadata.xml" />
+    <Content Include="1101\schemas\Examples\exampleWGS84Box2.xml" />
+    <Content Include="1102\schemas\Examples\exampleCapabilities1.xml" />
+    <Content Include="1102\schemas\Examples\exampleConstraint1.xml" />
+    <Content Include="1102\schemas\Examples\exampleExceptionReport1.xml" />
+    <Content Include="1102\schemas\Examples\exampleExceptionReport2.xml" />
+    <Content Include="1102\schemas\Examples\exampleGeneralBox2.xml" />
+    <Content Include="1102\schemas\Examples\exampleGetCapabilities2.xml" />
+    <Content Include="1102\schemas\Examples\exampleOperationsMetadata.xml" />
+    <Content Include="1102\schemas\Examples\exampleWGS84Box2.xml" />
+    <Content Include="1102\schemas\ReadMe.txt" />
+    <Content Include="1103\ReadMe.txt" />
+    <Content Include="1103\schemas\Examples\exampleCapabilities1.xml" />
+    <Content Include="1103\schemas\Examples\exampleConstraint1.xml" />
+    <Content Include="1103\schemas\Examples\exampleExceptionReport1.xml" />
+    <Content Include="1103\schemas\Examples\exampleExceptionReport2.xml" />
+    <Content Include="1103\schemas\Examples\exampleGeneralBox2.xml" />
+    <Content Include="1103\schemas\Examples\exampleGetCapabilities2.xml" />
+    <Content Include="1103\schemas\Examples\exampleOperationsMetadata.xml" />
+    <Content Include="1103\schemas\Examples\exampleWGS84Box2.xml" />
+    <Content Include="1103\schemas\xsd commands.txt" />
+    <Content Include="1103\schemas\xsd.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="1102\schemas\ows\1.1.0\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -57,5 +277,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-
- </Project>
+</Project>
