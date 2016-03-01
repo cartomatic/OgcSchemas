@@ -363,8 +363,12 @@ namespace Cartomatic.OgcSchemas.Wmts.Wmts_101 {
         }
         
         /// <remarks/>
-        //[System.Xml.Serialization.XmlElementAttribute("BoundingBox", typeof(BoundingBoxType))]
-        [System.Xml.Serialization.XmlElementAttribute("WGS84BoundingBox", typeof(WGS84BoundingBoxType))]
+        [System.Xml.Serialization.XmlElementAttribute("BoundingBox", typeof(BoundingBoxType))]
+
+        //This is a duplicate object attr - same as for the WGS84BoundingBox property above. XmlSerializer will throw errs when being instantiated with the following exception (nested deep in the inners exceptions:
+        //The XML element 'WGS84BoundingBox' from namespace 'http://www.opengis.net/ows/1.1' is already present in the current scope. Use XML attributes to specify another XML name or namespace for the element.
+        //so basically need a unique property name here!
+        //[System.Xml.Serialization.XmlElementAttribute("WGS84BoundingBox", typeof(WGS84BoundingBoxType))]
         public BoundingBoxType[] Items {
             get {
                 return this.itemsField;
@@ -408,7 +412,7 @@ namespace Cartomatic.OgcSchemas.Wmts.Wmts_101 {
     }
     
     /// <remarks/>
-    //[System.Xml.Serialization.XmlIncludeAttribute(typeof(WGS84BoundingBoxType))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(WGS84BoundingBoxType))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -839,7 +843,7 @@ namespace Cartomatic.OgcSchemas.Wmts.Wmts_101 {
         private string[] availableCRSField;
         
         /// <remarks/>
-        //[System.Xml.Serialization.XmlElementAttribute("BoundingBox", typeof(BoundingBoxType))]
+        [System.Xml.Serialization.XmlElementAttribute("BoundingBox", typeof(BoundingBoxType))]
         [System.Xml.Serialization.XmlElementAttribute("WGS84BoundingBox", typeof(WGS84BoundingBoxType))]
         public BoundingBoxType[] Items {
             get {
@@ -1885,6 +1889,16 @@ namespace Cartomatic.OgcSchemas.Wmts.Wmts_101 {
                 this.tileMatrixSetField = value;
             }
         }
+
+        //Note:
+        //It looks like either Layers arr is missing in the xsd definition or the xsd.exe failed to properly read it!
+        private LayerType[] layerSetField;
+        [System.Xml.Serialization.XmlElementAttribute("Layer")]
+        public LayerType[] LayerSet {
+            get { return this.layerSetField; }
+            set { this.layerSetField = value; }
+        }
+
     }
     
     /// <remarks/>
@@ -1918,7 +1932,7 @@ namespace Cartomatic.OgcSchemas.Wmts.Wmts_101 {
         }
         
         /// <remarks/>
-        //[System.Xml.Serialization.XmlElementAttribute("BoundingBox", typeof(BoundingBoxType), Namespace="http://www.opengis.net/ows/1.1")]
+        [System.Xml.Serialization.XmlElementAttribute("BoundingBox", typeof(BoundingBoxType), Namespace="http://www.opengis.net/ows/1.1")]
         [System.Xml.Serialization.XmlElementAttribute("WGS84BoundingBox", typeof(WGS84BoundingBoxType), Namespace="http://www.opengis.net/ows/1.1")]
         public BoundingBoxType Item {
             get {
@@ -3783,8 +3797,11 @@ namespace Cartomatic.OgcSchemas.Wmts.Wmts_101 {
         
         private ContentsType contentsField;
         
-        private Theme[][] themesField;
-        
+        //private Theme[][] themesField;
+        //Note: this seems to be badly defined somewhere in the xsd or badly interpreted by the xsd.exe
+        //so need to fix it by just making arr instead of jugged arr
+        private Theme[] themesField;
+
         private OnlineResourceType[] wSDLField;
         
         private OnlineResourceType[] serviceMetadataURLField;
@@ -3801,7 +3818,11 @@ namespace Cartomatic.OgcSchemas.Wmts.Wmts_101 {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayItemAttribute("Theme", typeof(Theme), IsNullable=false)]
-        public Theme[][] Themes {
+        //public Theme[][] Themes {
+        //Note: this seems to be badly defined somewhere in the xsd or badly interpreted by the xsd.exe
+        //so need to fix it by just making arr instead of jugged arr
+        public Theme[] Themes
+        {
             get {
                 return this.themesField;
             }
