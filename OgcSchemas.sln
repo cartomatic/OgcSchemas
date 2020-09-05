@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OgcSchemas.Wms", "OgcSchemas.Wms\OgcSchemas.Wms.csproj", "{B8398792-4BB8-4AD0-B55D-3E638E008D83}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cartomatic.OgcSchemas.Wms", "OgcSchemas.Wms\Cartomatic.OgcSchemas.Wms.csproj", "{B8398792-4BB8-4AD0-B55D-3E638E008D83}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OgcSchemas.Wmts", "OgcSchemas.Wmts\OgcSchemas.Wmts.csproj", "{783A8CDD-F702-4498-B3CF-0373C2465C6C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cartomatic.OgcSchemas.Wmts", "OgcSchemas.Wmts\Cartomatic.OgcSchemas.Wmts.csproj", "{783A8CDD-F702-4498-B3CF-0373C2465C6C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OgcSchemas.Ows", "OgcSchemas.Ows\OgcSchemas.Ows.csproj", "{C57CB13E-C60B-4B26-A2F7-C09673580FF5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cartomatic.OgcSchemas.Ows", "OgcSchemas.Ows\Cartomatic.OgcSchemas.Ows.csproj", "{C57CB13E-C60B-4B26-A2F7-C09673580FF5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,5 +30,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {27B9E017-128B-4F61-ABE0-7C500A795DB4}
 	EndGlobalSection
 EndGlobal
